@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:geolocator/controlers/postos_controller.dart';
+import 'package:postos_local/controlers/postos_controller.dart';
+
 import 'package:provider/provider.dart';
 
 class PostosPage extends StatelessWidget {
