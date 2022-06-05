@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:geolocator/pages/postos_page.dart';
+import 'package:postos_local/pages/postos_page.dart';
 
 void main() {
   runApp(const MyApp());
