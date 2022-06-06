@@ -1,16 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:postos_local/pages/postos_page.dart';
+import 'package:postos_local/repositories/postos_repository.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider<PostosRepository>(
+      create: (_) => PostosRepository(),
+      child: App(),
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return PostosPage();
+    return MaterialApp(
+      title: 'Postos TicketLog Icomon',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.lightGreen,
+      ),
+      home: PostosPage(),
+    );
   }
 }
