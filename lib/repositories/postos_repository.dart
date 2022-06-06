@@ -4,28 +4,28 @@ import 'package:postos_local/models/posto.dart';
 class PostosRepository extends ChangeNotifier {
   final List<Posto> _postos = [
     Posto(
-      nome: 'Posto GT - Rede Rodoil',
-      endereco: 'R. João Negrão, 1072 - Rebouças - Centro, Curitiba - PR',
+      nome: 'Posto BIG',
+      endereco: 'R. Mal. Deodoro, 27 - Centro, São Bernardo do Campo - SP',
       foto:
-          'https://lh5.googleusercontent.com/p/AF1QipP_xnSi5-sp9slSuMpSx-JlmvwvHGL1VJ_JcOGX=w408-h306-k-no',
-      latitude: -25.4361979,
-      longitude: -49.2624613,
+          'https://storage.googleapis.com/bucket-grupobig-institucional-prod/72583d66c3e54e109bf2f70d8da200a8/posto-2.png',
+      latitude: -23.7223309,
+      longitude: -46.5512325,
     ),
     Posto(
-      nome: 'Auto Posto Rodoviária',
-      endereco: 'Av. Presidente Affonso Camargo 10 - Rebouças, Curitiba - PR',
+      nome: 'Posto Iezzo',
+      endereco: 'R. Ana Maria Martinez - Assunção, São Bernardo do Campo - SP',
       foto:
-          'https://lh5.googleusercontent.com/p/AF1QipPnfQSsnvt6-VAxF-fUQ0onQCeRktJptOvSL_9F=w408-h306-k-no',
-      latitude: -25.435538,
-      longitude: -49.2623809,
+          'https://lh3.googleusercontent.com/p/AF1QipNgSZSNo_OFKOzsOFK_LaUy84yB8n5RU-mcO306=w1080-h608-p-no-v0',
+      latitude: -23.7235258,
+      longitude: -46.5710704,
     ),
     Posto(
-      nome: 'Auto Posto Nilo Cairo',
-      endereco: 'R. Tibagi, 652 - Centro, Curitiba - PR',
+      nome: 'Auto Posto Bambu do Riacho Grande',
+      endereco: 'R. Rio Acima, 156 - Riacho Grande, São Bernardo do Campo - SP',
       foto:
-          'https://lh5.googleusercontent.com/p/AF1QipOB2w7C9Q_NTblNRhcxJtN3-s4_gSjHI1rs5cSM=w408-h544-k-no',
-      latitude: -25.435260,
-      longitude: -49.2620769,
+          'https://www.google.com/maps/uv?pb=!1s0x94ce3ff61f4af573%3A0xf7be54c865acbc00!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOxBwuMqFmE-lavLqgFWZfBdnZjQvqyNYnKVdDo%3Dw213-h160-k-no!5sAuto%20Posto%20Bambu%20do%20Riacho%20Grande%20-%20Pesquisa%20Google!15sCgIgAQ&imagekey=!1e10!2sAF1QipPUiQS2Vk3PFlAjjXXBY3PkBqcjFjjWbSfa9y9l&hl=pt-BR&sa=X&ved=2ahUKEwi4mbfy05f4AhVulZUCHY7lDzMQoip6BAgtEAM#',
+      latitude: -23.778145,
+      longitude: -46.5294699,
     ),
   ];
 
