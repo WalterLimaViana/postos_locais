@@ -11,15 +11,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int paginaAtual = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    PostosPage(),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-  ];
+  final List<Widget> _paginas = [PostosPage(), PostosLista()];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -30,11 +22,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: _widgetOptions.elementAt(paginaAtual),
-      ),
+      body: _paginas[paginaAtual],
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
+        items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.map),
             label: 'Mapa',
